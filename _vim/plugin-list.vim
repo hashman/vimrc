@@ -20,22 +20,39 @@
 "      \    },
 "      \ }
 
-" ## snipMate (auto-complete)
-NeoBundle 'MarcWeber/vim-addon-mw-utils'
-NeoBundle 'tomtom/tlib_vim'
+" ## YouCompleteMe (code-completion)
+NeoBundle 'Valloric/YouCompleteMe'
+let g:ycm_filetype_blacklist = {
+      \ 'tagbar' : 1,
+      \ 'qf' : 1,
+      \ 'notes' : 1,
+      \ 'markdown' : 1,
+      \ 'unite' : 1,
+      \ 'text' : 1,
+      \ 'vimwiki' : 1,
+      \ 'gitcommit' : 1,
+      \}
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+
+" ## UltiSnips (auto-complete)
+NeoBundle 'sirver/ultisnips'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger="<c-tab>"
+let g:UltiSnipsListSnippets="<c-s-tab>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "ultisnips_my"]
+
+" snippets for UltiSnips.
 NeoBundle 'honza/vim-snippets'
-NeoBundle 'garbas/vim-snipmate'
 
 " ## vim-airline
 " replace 'vim-powerline'.
 NeoBundle 'bling/vim-airline'
 "let g:airline_powerline_fonts = 1
-
-" ## Vim Auto Complete Popup (need L9)
-NeoBundle 'othree/vim-autocomplpop'
-NeoBundle 'L9'
-" autocomplete with snippets.
-let g:acp_behaviorSnipmateLength = 1
 
 " ## c.vim
 NeoBundleLazy 'c.vim'
