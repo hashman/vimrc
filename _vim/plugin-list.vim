@@ -43,8 +43,8 @@ autocmd FileType c NeoBundleSource c.vim
 
 " ## calendar.vim
 "NeoBundle 'calendar.vim'
-NeoBundle 'calendar.vim--Matsumoto'
-nmap <leader>wc	:Calendar<CR>
+"NeoBundle 'calendar.vim--Matsumoto'
+"nmap <leader>wc	:Calendar<CR>
 
 " ## Colorscheme
 "NeoBundle 'flazz/vim-colorschemes'
@@ -79,13 +79,13 @@ let g:ctrlp_user_command = {
 "nmap <C-m>   :CtrlPMRU<cr>
 
 " ## Vim EasyMotion
-NeoBundle 'easymotion/vim-easymotion'
+"NeoBundle 'easymotion/vim-easymotion'
 
 " ## EditorConfig
-NeoBundle 'editorconfig/editorconfig-vim'
+"NeoBundle 'editorconfig/editorconfig-vim'
 
 " ## EnhCommentify.vim
-NeoBundle 'EnhCommentify.vim'
+"NeoBundle 'EnhCommentify.vim'
 
 " ## Emmet
 NeoBundle 'mattn/emmet-vim'
@@ -146,18 +146,18 @@ nmap gh <Plug>GitGutterNextHunk
 nmap gH <Plug>GitGutterPrevHunk
 
 " ## HTML5 omnicomplete and syntax
-NeoBundle 'othree/html5.vim'
+"NeoBundle 'othree/html5.vim'
 
 " ## indentLine
 NeoBundle 'Yggdroot/indentLine'
 
 " ## Matchit
-NeoBundle 'matchit.zip'
+"NeoBundle 'matchit.zip'
 
 " ## mru.vim
-NeoBundle 'mru.vim'
-let MRU_Max_Entries = 1000
-nmap <leader>m  :MRU<CR>
+"NeoBundle 'mru.vim'
+"let MRU_Max_Entries = 1000
+"nmap <leader>m  :MRU<CR>
 
 " ## NERDTree
 NeoBundle 'scrooloose/nerdtree'
@@ -168,10 +168,10 @@ nmap <leader>e  :NERDTreeToggle<CR>
 NeoBundle 'Xuyuanp/nerdtree-git-plugin'
 
 " ## vim-notes
-NeoBundle 'xolox/vim-notes'
-NeoBundle 'xolox/vim-misc'
-let g:notes_directories = ['~/Dropbox/notes']
-let g:notes_suffix = '.txt'
+"NeoBundle 'xolox/vim-notes'
+"NeoBundle 'xolox/vim-misc'
+"let g:notes_directories = ['~/Dropbox/notes']
+"let g:notes_suffix = '.txt'
 
 " ## numbers.vim
 "NeoBundle 'myusuf3/numbers.vim'
@@ -230,7 +230,7 @@ autocmd FileType php noremap <F4> :!php -l % <CR>
 "set -g default-terminal 'screen-256color'
 
 " ## pythoncomplete
-NeoBundle 'pythoncomplete'
+"NeoBundle 'pythoncomplete'
 
 " ## Ragtag
 " - https://github.com/tpope/vim-ragtag/blob/master/doc/ragtag.txt
@@ -316,25 +316,25 @@ NeoBundle 'chusiang/vim-sdcv'
 nmap <leader>w :call SearchWord()<CR>
 
 " ## Tagbar
-NeoBundle 'majutsushi/tagbar'
-let g:tagbar_autofocus = 1
-let g:tagbar_sort = 0
-nmap <leader>t :<C-u>TagbarToggle<CR>
+"NeoBundle 'majutsushi/tagbar'
+"let g:tagbar_autofocus = 1
+"let g:tagbar_sort = 0
+"nmap <leader>t :<C-u>TagbarToggle<CR>
 "nnoremap <F3> :<C-u>TagbarToggle<CR>
 
-if has('win32')
-	let g:tagbar_ctags_bin='C:\ctags.exe'
-endif
+"if has('win32')
+"	let g:tagbar_ctags_bin='C:\ctags.exe'
+"endif
 
 " ## TagList
-NeoBundle 'taglist.vim'
+"NeoBundle 'taglist.vim'
 "nmap <leader>t :<C-u>Tlist<CR>
 
 " ## Trinity (SrcExpl need)
-NeoBundle "wesleyche/Trinity"
+"NeoBundle "wesleyche/Trinity"
 
 " ## vimcdoc-tw
-NeoBundle 'chusiang/vimcdoc-tw'
+"NeoBundle 'chusiang/vimcdoc-tw'
 "set helplang=tw
 
 " ## vim-indent-object
@@ -349,46 +349,46 @@ NeoBundle 'chusiang/vimcdoc-tw'
 "NeoBundle 'michaeljsmith/vim-indent-object'
 
 " ## Vimwiki
-NeoBundle 'vimwiki'
+"NeoBundle 'vimwiki'
 
 " - g:vimwiki_list* *vimwiki-multiple-wikies*.
-let g:vimwiki_list = [
-			\ {'path': '~/vimwiki/', 'index': 'index', 'path_html': '~/vimwiki/public_html/'},
-			\ {'path': '~/vimwiki/diary/', 'index': 'gtd'},
-			\ {'path': '~/vimwiki/csu/', 'index': 'index_csu'},
-			\ {'path': '/media/data_ext3/home.d/vim/vimwiki-secret', 'index': 'secret'},
-			\ {'path': '~/vimwiki/vim-like/', 'index': 'vim-like'},
-			\ {'path': '~/vimwiki/radtek/',	'index': 'radtek'} ]
+"let g:vimwiki_list = [
+"			\ {'path': '~/vimwiki/', 'index': 'index', 'path_html': '~/vimwiki/public_html/'},
+"			\ {'path': '~/vimwiki/diary/', 'index': 'gtd'},
+"			\ {'path': '~/vimwiki/csu/', 'index': 'index_csu'},
+"			\ {'path': '/media/data_ext3/home.d/vim/vimwiki-secret', 'index': 'secret'},
+"			\ {'path': '~/vimwiki/vim-like/', 'index': 'vim-like'},
+"			\ {'path': '~/vimwiki/radtek/',	'index': 'radtek'} ]
 
 " - Header level color.
-:hi VimwikiHeader1 guifg=#FF0000	" Red
-:hi VimwikiHeader2 guifg=#FFDB00	" Yellow
-:hi VimwikiHeader3 guifg=#9C9CE0	" Light Purple 
-:hi VimwikiHeader4 guifg=#91B9E0	" Light Blue
-:hi VimwikiHeader5 guifg=#999999	" Light Grey
-:hi VimwikiHeader6 guifg=#49D432	" Light Green
+":hi VimwikiHeader1 guifg=#FF0000	" Red
+":hi VimwikiHeader2 guifg=#FFDB00	" Yellow
+":hi VimwikiHeader3 guifg=#9C9CE0	" Light Purple 
+":hi VimwikiHeader4 guifg=#91B9E0	" Light Blue
+":hi VimwikiHeader5 guifg=#999999	" Light Grey
+":hi VimwikiHeader6 guifg=#49D432	" Light Green
 
 " - Default Browser.
-let g:vimwiki_browsers=['/usr/bin/firefox']
+"let g:vimwiki_browsers=['/usr/bin/firefox']
 
 " - Keymap
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wtb	:VimwikiTable <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wj	:VimwikiDiaryNextDay <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wk	:VimwikiDiaryPrevDay <CR>
-autocmd BufRead,BufNewFile *.wiki noremap	<leader>wo	<C-Space> <CR>
+"autocmd BufRead,BufNewFile *.wiki noremap	<leader>wtb	:VimwikiTable <CR>
+"autocmd BufRead,BufNewFile *.wiki noremap	<leader>wj	:VimwikiDiaryNextDay <CR>
+"autocmd BufRead,BufNewFile *.wiki noremap	<leader>wk	:VimwikiDiaryPrevDay <CR>
+"autocmd BufRead,BufNewFile *.wiki noremap	<leader>wo	<C-Space> <CR>
 
 " ## VST (Vim reStructured Text)
-NeoBundle 'VST'
-let g:vst_write_export=1	" plugin of vst default export html.
+"NeoBundle 'VST'
+"let g:vst_write_export=1	" plugin of vst default export html.
 
 " ## wmgraphviz.vim
-NeoBundle 'wannesm/wmgraphviz.vim'
-let g:WMGraphviz_viewer='xdg-open'
-let g:WMGraphviz_output="png" 
-nmap <leader>lp :GraphvizCompile<CR>
-nmap <leader>ll :GraphvizCompilePDF<CR>
-nmap <leader>lv :GraphvizShow<CR>
-nmap <leader>li :GraphvizInteractive<CR>
+"NeoBundle 'wannesm/wmgraphviz.vim'
+"let g:WMGraphviz_viewer='xdg-open'
+"let g:WMGraphviz_output="png" 
+"nmap <leader>lp :GraphvizCompile<CR>
+"nmap <leader>ll :GraphvizCompilePDF<CR>
+"nmap <leader>lv :GraphvizShow<CR>
+"nmap <leader>li :GraphvizInteractive<CR>
 
 " ## Start Syntax
 NeoBundle 'scrooloose/syntastic'
@@ -397,31 +397,31 @@ let g:syntastic_warning_symbol='⚠'
 let g:syntastic_enable_highlighting = 1
 let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 
-NeoBundle 'BBCode--Dahn'
+"NeoBundle 'BBCode--Dahn'
 NeoBundle 'othree/vim-javascript-syntax'
-NeoBundle 'css3'
-NeoBundle 'hail2u/vim-css3-syntax'
+"NeoBundle 'css3'
+"NeoBundle 'hail2u/vim-css3-syntax'
 
-NeoBundle 'skammer/vim-css-color'
-let g:cssColorVimDoNotMessMyUpdatetime = 1
+"NeoBundle 'skammer/vim-css-color'
+"let g:cssColorVimDoNotMessMyUpdatetime = 1
 
-NeoBundle 'gorodinskiy/vim-coloresque'
-NeoBundle 'jQuery'
+"NeoBundle 'gorodinskiy/vim-coloresque'
+"NeoBundle 'jQuery'
 NeoBundle 'php.vim'
 "NeoBundle 'cpp.vim'
 "NeoBundle 'django.vim'
-NeoBundle 'jgb/django.vim'
-NeoBundle 'python.vim--Vasiliev'
-NeoBundle 'nginx.vim'
+"NeoBundle 'jgb/django.vim'
+"NeoBundle 'python.vim--Vasiliev'
+"NeoBundle 'nginx.vim'
 "NeoBundle 'rest.vim'
 "set syntax=rest
-NeoBundle 'xu-cheng/brew.vim'
+"NeoBundle 'xu-cheng/brew.vim'
 "NeoBundle 'vadv/vim-chef'
 "autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
-NeoBundle 'rking/ag.vim'
-NeoBundle 'ekalinin/Dockerfile.vim'
-NeoBundle 'pearofducks/ansible-vim'
-NeoBundle 'Glench/Vim-Jinja2-Syntax'
+"NeoBundle 'rking/ag.vim'
+"NeoBundle 'ekalinin/Dockerfile.vim'
+"NeoBundle 'pearofducks/ansible-vim'
+"NeoBundle 'Glench/Vim-Jinja2-Syntax'
 
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'godlygeek/tabular'
@@ -429,7 +429,7 @@ let g:vim_markdown_folding_disabled=1
 
 NeoBundle 'timcharper/textile.vim'
 NeoBundle 'guns/xterm-color-table.vim'
-NeoBundle 'nanotech/jellybeans.vim'
+"NeoBundle 'nanotech/jellybeans.vim'
 
 " Dash.app for OSX.
 NeoBundle 'rizzatti/dash.vim.git'
